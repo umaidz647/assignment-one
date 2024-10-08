@@ -21,23 +21,24 @@
         <h2 style="text-align: center; color: white;">Connect With Me</h2>
     
             
-            <form>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="00ae4d44-360d-43fe-9260-84e7c342c8cc">
                 <div class="contact-right">
-                    <div class="name">
+                    <div class="name">   
                         <label>Name</label>
-                        <input type="text" placeholder="Enter Your Name">
+                        <input name="name" type="text" placeholder="Enter Your Name" required>
                     </div>
                     <div class ="email">
                         <label>Email</label>
-                        <input type="email" placeholder="Enter Your Email">
+                        <input name="email" type="email" placeholder="Enter Your Email" required>
                     </div>
                     <div class ="message">
                         <label>Message</label>
-                        <textarea rows="5px" type="text" placeholder="Enter Your Message"></textarea>
+                        <textarea name="message" rows="5px" type="text" placeholder="Enter Your Message"></textarea>
                     </div>
                     <div class="verify">
                         <label>Verify you are not a bot(what is 2 + 2)</label>
-                        <input type="number">
+                        <input name="verify" type="number" required>
                     </div>
                     
                     <button type="submit">Submit</button>
